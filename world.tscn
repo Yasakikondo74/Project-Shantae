@@ -1,0 +1,88 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm1qyc12ouwoj"]
+
+[ext_resource type="PackedScene" uid="uid://d4b2iid2y7s6b" path="res://shantae.tscn" id="1_6a7vh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7xxy"]
+size = Vector2(958.5, 118)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tipy0"]
+size = Vector2(135.25, 95.5)
+
+[node name="World" type="Node2D"]
+
+[node name="Shantae" parent="." instance=ExtResource("1_6a7vh")]
+position = Vector2(158, 518)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(15, -295)
+
+[node name="Panel" type="Panel" parent="StaticBody2D"]
+offset_left = 120.0
+offset_top = 840.0
+offset_right = 1080.0
+offset_bottom = 960.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(599.75, 900)
+shape = SubResource("RectangleShape2D_b7xxy")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="Panel" type="Panel" parent="StaticBody2D2"]
+offset_left = 224.0
+offset_top = 478.0
+offset_right = 360.0
+offset_bottom = 574.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(292, 526)
+shape = SubResource("RectangleShape2D_tipy0")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="Panel" type="Panel" parent="StaticBody2D3"]
+offset_left = 440.0
+offset_top = 395.0
+offset_right = 576.0
+offset_bottom = 491.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(507, 442)
+shape = SubResource("RectangleShape2D_tipy0")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="Panel" type="Panel" parent="StaticBody2D4"]
+offset_left = 660.0
+offset_top = 331.0
+offset_right = 796.0
+offset_bottom = 427.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(729, 377)
+shape = SubResource("RectangleShape2D_tipy0")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+
+[node name="Panel" type="Panel" parent="StaticBody2D5"]
+offset_left = 867.0
+offset_top = 291.0
+offset_right = 1003.0
+offset_bottom = 387.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(935, 338)
+shape = SubResource("RectangleShape2D_tipy0")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+
+[node name="Panel" type="Panel" parent="StaticBody2D6"]
+offset_left = 1262.0
+offset_top = 342.0
+offset_right = 1398.0
+offset_bottom = 438.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2(1329, 390)
+shape = SubResource("RectangleShape2D_tipy0")
